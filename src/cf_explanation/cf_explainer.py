@@ -1,5 +1,12 @@
 # Based on https://github.com/RexYing/gnn-model-explainer/blob/master/explainer/explain.py
 
+import os
+import sys
+
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(THIS_DIR, ".."))
+sys.path.insert(0, PROJECT_ROOT)
+
 import math
 import time
 import torch
